@@ -5,27 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Table</title>
     <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <table>
-        <thead>
-            <th>
-                <tr>
-                    <ol>
-                        <li>
-                            thathe
-                        </li>
-                    </ol>
-                </tr>
-            </th>
-        </thead>
-        <tbody>
-            <td>
-                <ol>
-                    <li>ahere</li>
-                </ol>
-            </td>
-        </tbody>
-    </table>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+            <a class="navbar-brand" href="#">GreatSpiration</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#price-table">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#my-footer">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#my-footer">About</a>
+                  </li>
+              </ul>
+            </div>
+    </nav>
+    <section>
+        <div class="Head">
+            Pricing Table
+        </div>
+    </section>
+    <section>
+        <div class="toggle-align">
+            <h2 class="monthly">Monthly</h2>
+            <label class="switch">
+                <input class="checking" type="checkbox" checkbox>
+                <span class="slider round"></span>
+            </label>
+            <h2 class="yearly">Yearly</h2>
+        </div>
+    </section>
+
+    <section id="price-table">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card-group">
+                        <div class="card">
+                            <div class="card-header"><h1>Printing</h1></div>
+                            <div class="card-body" id="printing">
+                                <h2>$<span class="price">25</span>/month</h2> <hr>
+                                <ul>
+                                    <li><i class="fas fa-check"></i>Unlimited type</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited printing</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited reviews</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited users</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer" id="printing">
+                                <button class="btn btn-lg btn-block btn-info">Select</button>
+                            </div>
+                        </div>
+                        <div class="card" id="standard">
+                            <div class="card-header"><h1>Video</h1></div>
+                            <div class="card-body">
+                                <h2 id="standard-price">$<span class="price" id="p1">35</span>/month</h2><hr>
+                                <ul>
+                                    <li><i class="fas fa-check"></i>Unlimited editing</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited shoot</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited recording</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited reviews</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-lg btn-block btn-info">Select</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"><h1>Graphics</h1></div>
+                            <div class="card-body" id="graphic">
+                                <h2>$<span class="price">45</span>/month</h2> <hr>
+                                <ul>
+                                    <li><i class="fas fa-check"></i>Unlimited logo</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited poster</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited flyers</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited branding</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer" id="graphic">
+                                <button class="btn btn-lg btn-block btn-info">Select</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header"><h1>Photo</h1></div>
+                            <div class="card-body" id="photo">
+                                <h2>$<span class="price">55</span>/month</h2> <hr>
+                                <ul>
+                                    <li><i class="fas fa-check"></i>Unlimited shoot</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited editing</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited redesign</li><hr>
+                                    <li><i class="fas fa-check"></i>Unlimited reviews</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer" id="photo">
+                                <button class="btn btn-lg btn-block btn-info">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-footer" id="my-footer">
+        <div class="container-footer">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                 <p class="p-date">&copy <span class="text-muted" id="updateMyDate"></span> GreatSpiration Inc. </p>
+              </div>
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <div id="parent">
+                    <div id="social_media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                 </div>
+              </ul>
+            </footer>
+          </div>
+    </section>
+    <script type="text/javascript" src="table.js"></script>
 </body>
 </html>
